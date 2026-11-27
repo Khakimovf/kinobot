@@ -1,0 +1,18 @@
+[Unit]
+Description=Universal Telegram Kinobot & Media Downloader
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/kinobot
+EnvironmentFile=/opt/kinobot/.env
+ExecStart=/opt/kinobot/.venv/bin/python /opt/kinobot/main.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

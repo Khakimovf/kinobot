@@ -1,0 +1,19 @@
+# Environment & secrets
+.env
+cookies.txt
+
+# Runtime artifacts
+downloads/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Python caches & virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/

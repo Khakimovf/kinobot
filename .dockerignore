@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+cookies.txt
+downloads/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+__pycache__/
+*.py[cod]
+.venv/
+venv/
